@@ -5,6 +5,7 @@
 using namespace std;
 
 int main() {
+  //Creamos las listas y demas variables
   list<string> listaPalabras;
   list<string> listaPalabrasInv;
   Nodo Arbol;
