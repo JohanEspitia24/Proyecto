@@ -10,6 +10,7 @@ int main() {
   list<string> listaPalabrasInv;
   Nodo Arbol;
   Nodo ArbolInv;
+  //Creamos las raices de los arboles
   Arbol.setRaizAct('.');
   ArbolInv.setRaizAct('.');
   pedirComando(listaPalabras, listaPalabrasInv, Arbol, ArbolInv);
