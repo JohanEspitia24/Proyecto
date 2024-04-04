@@ -14,5 +14,5 @@ int main() {
   Arbol.setRaizAct('.');
   ArbolInv.setRaizAct('.');
   pedirComando(listaPalabras, listaPalabrasInv, Arbol, ArbolInv);
-  //
+  //Pueba de codigo
 }
