@@ -42,9 +42,9 @@ void Nodo::anhadirPalabraEnArbol(list<char> palabra){ //recibe una lista de char
     }
     Nodo* hijo = buscarCaracterEnHijos(palabra.front()); //Buscamos el nodo con el caracter front de la palabra
     if(hijo == nullptr){ //Si no está lo creamos y añadimos a la lista
-        hijo = new Nodo();
+        hijo = new Nodo(); //crear constructor con la raiz|
         hijo->setRaizAct(palabra.front());
-        hijosProximos.push_back(hijo);
+        this.hijosProximos.push_back(hijo);
     }
     palabra.pop_front(); //Eliminar caracter añadido de la palabra
     hijo->anhadirPalabraEnArbol(palabra); //Añadir el resto de la palabra recursivamente a partir del nuevo nodo creado

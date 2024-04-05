@@ -24,7 +24,7 @@ bool evaluarComando(list<string>& listaPalabras, list<string>& listaPalabrasInv,
         it2++;
     }
 
-    if(analizarComando(comando, 1, "help", "x")){//help
+    if(analizarComando(palabras.size(), (*it1), (*it2), 1, "help", "x")){//help
         cmdHelp();
     }else if(analizarComando(comando, 2, "inicializar", "diccionario.txt")){//inicializar diccionario.txt
         cmdInicDic(listaPalabras, listaPalabrasInv, 1);
@@ -53,7 +53,7 @@ bool evaluarComando(list<string>& listaPalabras, list<string>& listaPalabrasInv,
     return true;
 }
 
-bool analizarComando(string comando, int qPalabras, string palabra1, string palabra2){
+bool analizarComando(int tamReal, string palabra1, string palabra2, int tamEsperado, string palabra1, string palabra2){
     list<string> palabras;
     palabras = separarComando(comando);
     auto it1 = palabras.begin(), it2 = it1;

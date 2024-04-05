@@ -11,7 +11,9 @@ int main() {
   Nodo Arbol;
   Nodo ArbolInv;
   // Creamos las raices de los arboles
+  list<char> palabra = {'h','o','l','a'}
   Arbol.setRaizAct('.');
+  Arbol.anhadirPalabra(palabra);
   ArbolInv.setRaizAct('.');
   pedirComando(listaPalabras, listaPalabrasInv, Arbol, ArbolInv);
   //Pueba de codigo
