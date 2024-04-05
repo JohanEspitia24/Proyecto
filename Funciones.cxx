@@ -16,7 +16,7 @@ void pedirComando(list<string>& listaPalabras, list<string>& listaPalabrasInv, N
 }
 
 bool evaluarComando(list<string>& listaPalabras, list<string>& listaPalabrasInv, Nodo& Arbol, Nodo& ArbolInv, string comando){
-    cout<<"entro a evaluar";
+    cout<<"entro a evaluar"<<endl;
     list<string> palabras;
     palabras = separarComando(comando);
     auto it1 = palabras.begin(), it2 = it1;
@@ -48,7 +48,7 @@ bool evaluarComando(list<string>& listaPalabras, list<string>& listaPalabrasInv,
     }else if(analizarComando(comando, 2, "posibles_palabras", "x")){//posibles_palabras letras
         cmdPosiblesPalabras((*it2));
     }else{//comando no válido
-        cout<<"Comando no válido\n";
+        cout<<"Comando no vaSlido\n";
     }
     return true;
 }
@@ -85,7 +85,9 @@ void cmdHelp(){
 
 void cmdInicDic(list<string>& listaPalabras, list<string>& listaPalabrasInv, int num){ //Si recibe 1 lo inicializa al derecho, si recibe 0 al reves
     ifstream file("diccionario.txt");
+    cout<<"entro a inicializar\n";
     if(file.is_open()){
+        cout<<"Abrio el archivo\n";
         string linea;
         if(num == 1){ //al derecho
             while(getline(file, linea)){

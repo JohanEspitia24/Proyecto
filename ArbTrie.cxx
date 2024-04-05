@@ -2,6 +2,7 @@
 
 //Constructor
 ArbTrie::ArbTrie(){
+    raizNull.setRaizAct('.');
 }
 
 //Setters
@@ -15,8 +16,8 @@ Nodo ArbTrie::getRaizNull(){
 }
 
 //Métodos restantes
-void anhadirInicialPalabra(list<char> palabra){
-
+void anhadirInicialPalabra(list<char> palabra, Nodo raizNull){
+    raizNull.anhadirPalabraEnArbol(palabra);
 }
 
 
